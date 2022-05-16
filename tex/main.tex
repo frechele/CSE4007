@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+\usepackage{subfiles}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{cleveref}       % smart cross-referencing
+\usepackage{lipsum}         % Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage[shortlabels]{enumitem}
+
+%\title{Analysis of machine learning algorithms for hand-written digit data}
+\title{Analysis of machine learning algorithms for \\small vision data}
+\renewcommand{\shorttitle}{Analysis of machine learning algorithms for small vision data}
+
+\author{Junyeong Park\\
+		Department of Computer Science\\
+		Hanyang University\\
+		Seoul, South Korea\\
+		\texttt{jyp10987@gmail.com}}
+\date{}
+
+\hypersetup{
+	pdftitle={Untitled},
+	pdfauthor={Junyeong Park},
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+The most recent machine learning trend is to build a large model based on a vast amount of data.
+However, sometimes there may not be much data available.
+In this situation, using a heavy model poses a risk of overfitting.
+This paper presents which algorithms are most effective to use, especially in the field of computer vision, where there is little data.
+We trained algorithms that are not burdensome to use with only a single CPU without special computing devices such as GPUs or TPUs.
+And then we compared each model based on the time it took to be trained, the inference speed of the model, and translation invariance.
+The experimental results demonstrate the convolutional neural network is the best model in general computer vision with a small dataset in terms of accuracy and robustness.
+
+\end{abstract}
+
+\section{Introduction}
+\subfile{introduction}
+
+\section{Experiments}
+\subfile{experiments}
+
+\section{Results}
+\subfile{results}
+
+\section{Conclusion}
+\subfile{conclusion}
+
+\end{document}
